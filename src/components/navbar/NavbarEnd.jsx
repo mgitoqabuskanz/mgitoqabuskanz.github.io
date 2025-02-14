@@ -22,10 +22,10 @@ const NavbarEnd = () => {
             <a tabIndex={0} role="button" className="btn btn-ghost hover:border-amber-600 hover:bg-base-content hover:text-black lg:hidden md:hidden">
                 <MenuIcon/>
             </a>
-        <ul tabIndex={0} className="dropdown-content menu rounded-box z-1 w-screen">
+        <ul tabIndex={0} className="dropdown-content rounded-box z-1 w-screen text-center py-4">
             {links.map((link,index)=>{
-                return <li key={index} className="cursor-pointer p-2 bg-base-100 opacity-95 hover:text-black hover:bg-base-content hover:opacity-100 transition-all duration-500 ml-4">
-                    <a href={link.section} className='p-2'>
+                return <li key={index} className="py-4 cursor-pointer bg-base-100 opacity-95 hover:text-black hover:bg-base-content hover:opacity-100 transition-all duration-500 ml-4">
+                    <a href={link.section} className='py-4'>
                         <div className="hover:bg-transparent mx-auto text-center">{link.link}</div>
                     </a>
                 </li>
