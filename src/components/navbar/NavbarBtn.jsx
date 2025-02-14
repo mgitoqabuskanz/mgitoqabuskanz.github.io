@@ -25,7 +25,7 @@ const NavbarBtn = () => {
             <ul tabIndex={0} className="dropdown-content menu rounded-box z-1 w-screen">
                 { links.map ((link,index) => {
                     return (
-                        <div className="cursor-pointer p-2 hover:text-white hover:bg-base-300 transition-all duration-500">
+                        <div className="cursor-pointer p-2 hover:text-black hover:bg-base-content transition-all duration-500 ml-4 mt-2">
                             <li key={index}>
                                 <button href="#" className="mx-auto hover:bg-transparent">
                                     {link.link}
