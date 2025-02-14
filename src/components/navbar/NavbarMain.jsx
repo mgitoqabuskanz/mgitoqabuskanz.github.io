@@ -1,15 +1,15 @@
 import React from 'react'
-import NavbarLogo from './NavbarLogo'
-import NavbarLinks from './NavbarLinks'
-import NavbarBtn from './NavbarBtn'
+import NavbarStart from './NavbarStart'
+import NavbarCenter from './NavbarCenter'
+import NavbarEnd from './NavbarEnd'
 
 const NavbarMain = () => {
   return (
     <>
         <div className="navbar bg-base-100 shadow-sm">
-            <NavbarLogo/>
-            <NavbarLinks/>
-            <NavbarBtn/>
+            <NavbarStart/>
+            <NavbarCenter/>
+            <NavbarEnd/>
         </div>
     </>
   )
