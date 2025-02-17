@@ -23,18 +23,16 @@ const Navbar = () => {
   ];
   return (
     <div className='absolute top-0 left-0 w-full z-10'>
-        <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent">
+        <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-17 bg-transparent">
             {/* Logo */}
-            {/* <h1 className='w-full text-3xl font-bold text-[#00df9a]'>REACT.</h1> */}
-            <img src={assets.logo} className='logo.desktop' alt="" />
+            <a href="#" className='block text-3xl font-bold hover:text-white hover:transition-all hover:duration-500 bg-gradient-to-br from-cyan-400 to-lime-300 bg-clip-text text-transparent transition-all duration-500'>KANZ</a>
 
             {/* Desktop Navigation */}
-            {/* <ul className='hidden md:flex'> */}
-            <ul className='hidden lg:flex gap-7 text-white'>
+            <ul className='hidden lg:flex gap-7 text-white/90'>
                 {navItems.map(item => (
                 <li
                     key={item.id}
-                    className='cursor-pointer hover:text-gray-400'
+                    className='cursor-pointer hover:text-transparent bg-gradient-to-r from-cyan-400/70 to-lime-300/70 bg-clip-text inline-block transition-all duration-500'
                 >
                     {item.text}
                 </li>
@@ -42,9 +40,10 @@ const Navbar = () => {
             </ul>
 
             {/* Mobile Navigation Icon */}
-            <div onClick={handleNav} className='block lg:hidden w-7 cursor-pointer'>
-                {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
-            </div>
+            <a onClick={handleNav} className='inline-flex lg:hidden cursor-pointer border-2 p-2 border-transparent hover:rounded-full hover:border-2 hover:border-white hover:p-2 transition-all duration-500 hover:transition-all hover:duration-500'>
+                {nav ? <AiOutlineClose fill='white' size={20} /> : <AiOutlineMenu fill='white' size={20} />}
+            </a>
+
 
             {/* Mobile Navigation Menu */}
             <ul
@@ -56,13 +55,16 @@ const Navbar = () => {
                 }
             >
                 {/* Mobile Logo */}
-                    <div className="flex justify-evenly items-center py-4 px-4">
-                        <div className="flex-1 ml-2">
-                            <img src={assets.logo} alt="" />
+                    <div className="flex p-4 mx-2">
+                        <div className="flex-1 ml-2 ">
+                            <a href="#" className='flex-1 text-4xl font-bold hover:bg-gradient-to-br from-cyan-400 to-lime-300 hover:text-transparent bg-clip-text text-white transition-all duration-300'>KANZ</a>
+
                         </div>
-                        <div onClick={handleNav} className='flex-none py-4 px-4 rounded-full border'>
-                            {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
-                        </div>
+                        <a href='#'>
+                            <div onClick={handleNav} className='flex-none px-2 py-2 rounded-full border-2 text-white hover:border-red-500/50 hover:text-red-500/50 transition-all duration-300'>
+                                {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+                            </div>
+                        </a>
                     </div>    
 
                 {/* Mobile Navigation Items */}
@@ -71,7 +73,7 @@ const Navbar = () => {
                     {navItems.map(item => (
                     <li
                     key={item.id}
-                    className="px-4 py-4 rounded inline-block"
+                    className='inline-block p-4 cursor-pointer hover:text-transparent bg-gradient-to-r from-cyan-400/70 to-lime-300/70 bg-clip-text transition-all duration-500'
                     >
                         {item.text}
                     </li>
