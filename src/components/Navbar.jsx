@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent">
             {/* Logo */}
             {/* <h1 className='w-full text-3xl font-bold text-[#00df9a]'>REACT.</h1> */}
-            <img src={assets.logo} className='' alt="" />
+            <img src={assets.logo} className='logo.desktop' alt="" />
 
             {/* Desktop Navigation */}
             {/* <ul className='hidden md:flex'> */}
@@ -42,8 +42,7 @@ const Navbar = () => {
             </ul>
 
             {/* Mobile Navigation Icon */}
-            {/* <div onClick={handleNav} className='block md:hidden'> */}
-            <div onClick={handleNav} className='block md:hidden w-7 cursor-pointer'>
+            <div onClick={handleNav} className='block lg:hidden w-7 cursor-pointer'>
                 {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
             </div>
 
@@ -51,40 +50,36 @@ const Navbar = () => {
             <ul
                 className={
                 nav
-                    // ? 'fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500'
-                    // : 'ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]'
-                    ? 'lg:hidden fixed bg-white w-full right-0 top-25 bottom-0 overflow-hidden ease-in-out duration-500'
-                    : 'ease-in-out duration-500 fixed top-0 bottom-0 left-[-100%]'
+
+                    ? 'fixed w-full h-full left-0 right-0 top-0 bottom-0 lg:hidden bg-black/95 text-white overflow-hidden ease-in-out duration-500'
+                    : 'fixed w-full h-full left-0 right-0 top-[-100%] bottom-[-100%] ease-in-out duration-500'
                 }
             >
                 {/* Mobile Logo */}
-                {/* <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'>REACT.</h1> */}
-                {/* <img src={assets.logo} className='block lg:hidden' alt="" /> */}
-                
+                    <div className="flex justify-evenly items-center py-4 px-4">
+                        <div className="flex-1 ml-2">
+                            <img src={assets.logo} alt="" />
+                        </div>
+                        <div onClick={handleNav} className='flex-none py-4 px-4 rounded-full border'>
+                            {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+                        </div>
+                    </div>    
 
                 {/* Mobile Navigation Items */}
-                {/* {navItems.map(item => (
-                <li
-                    key={item.id}
-                    className='p-4 border-b rounded-xl hover:bg-[#00df9a] duration-300 hover:text-black cursor-pointer border-gray-600'
-                >
-                    {item.text}
-                </li>
-                ))} */}
                 <ul className='flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium'>
+                    
                     {navItems.map(item => (
                     <li
-                        key={item.id}
-                        className='px-4 py-2 rounded inline-block'
+                    key={item.id}
+                    className="px-4 py-4 rounded inline-block"
                     >
                         {item.text}
                     </li>
-                ))}
+                    )) }
+                </ul>
             </ul>
-            </ul>
-            </div>
         </div>
-    
+    </div>
   );
 };
 
