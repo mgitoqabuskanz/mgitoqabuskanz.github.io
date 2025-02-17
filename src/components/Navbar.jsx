@@ -22,7 +22,7 @@ const Navbar = () => {
     { id: 5, text: 'Contact' },
   ];
   return (
-    <div className='absolute top-0 left-0 w-full z-10'>
+    <div className='fixed top-0 left-0 w-full z-10'>
         <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-17 bg-transparent">
             {/* Logo */}
             <a href="#" className='block text-3xl font-bold hover:text-white hover:transition-all hover:duration-500 bg-gradient-to-br from-cyan-400 to-lime-300 bg-clip-text text-transparent transition-all duration-500'>KANZ</a>
