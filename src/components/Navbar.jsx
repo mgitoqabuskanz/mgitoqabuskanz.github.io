@@ -59,14 +59,14 @@ const Navbar = () => {
             >
 
             <div className="flex justify-between items-center py-2 px-10">
-            <a href="#" className='py-2 text-4xl'>
+            <a href="#" className='py-2 text-4xl bg-linear-to-r font-semibold from-cyan-400/70 to-lime-300/70 bg-clip-text hover:text-transparent'>
                 KANZ
             </a>
 
             <ul className='inline-flex space-x-3 items-center py-2'>
-                <li className='flex'><a href="" className='border rounded-lg py-1.5 px-3'>Hire Me</a></li>
-                <li className='flex'><a href="" className='border rounded-lg py-1.5 px-3'>Resume</a></li>
-                <li className='flex-none rounded-lg border py-2 px-2'>
+                <li className='flex'><a href="#" className='border rounded-lg py-1.5 px-3 bg-clip-border hover:border-white border-white/50 hover:bg-none bg-linear-to-r from-cyan-400/70 to-lime-300/70'>Hire Me</a></li>
+                <li className='flex'><a href="#" className='border rounded-lg py-1.5 px-3 hover:border-white hover:bg-linear-to-r from-cyan-400/70 to-lime-300/70 bg-clip-border border-white/50 bg-transparent'>Resume</a></li>
+                <li className='flex-none rounded-lg border py-2 px-2 border-white/50 hover:border-red-600/50 hover:text-red-600/50'>
                     <a onClick={handleNav} className='mx-auto items-center'>
                         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
                     </a>
@@ -78,7 +78,7 @@ const Navbar = () => {
                     {navItems.map(item => (
                     <li
                         key={item.id}
-                        className=''
+                        className='text-white bg-linear-to-r from-cyan-400/70 to-lime-300/70 bg-clip-text hover:text-transparent'
                     >
                         {item.text}
                     </li>
