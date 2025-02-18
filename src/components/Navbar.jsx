@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <div className='fixed top-0 left-0 w-full'>
         <div className="flex mx-auto justify-between bg-black/75 backdrop-blur-md text-white py-4 px-20 items-center">
-            <a href="#" className='text-4xl font-semibold'>
+            <a href="#" className='text-4xl font-semibold bg-linear-to-r from-cyan-400/70 to-lime-300/70 bg-clip-text text-transparent hover:text-white'>
                 KANZ
             </a>
 
@@ -32,17 +32,17 @@ const Navbar = () => {
                 {navItems.map(item => (
                 <li
                     key={item.id}
-                    className=''
+                    className='text-white bg-linear-to-r from-cyan-400/70 to-lime-300/70 bg-clip-text hover:text-transparent'
                 >
-                    {item.text}
+                    <a href="">{item.text}</a>
                 </li>
                 ))}
             </ul>
 
             <ul className='inline-flex space-x-5 items-center'>
-                <li className='md:flex hidden'><a href="" className='border rounded-lg py-2 px-4'>Hire Me</a></li>
-                <li className='md:flex hidden '><a href="" className='border rounded-lg py-2 px-4'>Resume</a></li>
-                <li className='flex-none rounded-lg border  mx-auto items-center'>
+                <li className='md:flex hidden'><a href="" className='border rounded-lg py-2 px-4 bg-clip-border hover:border-white border-white/50 hover:bg-none bg-linear-to-r from-cyan-400/70 to-lime-300/70'>Hire Me</a></li>
+                <li className='md:flex hidden '><a href="" className='border rounded-lg py-2 px-4 hover:border-white hover:bg-linear-to-r from-cyan-400/70 to-lime-300/70 bg-clip-border border-white/50 bg-transparent'>Resume</a></li>
+                <li className='flex-none rounded-lg border  mx-auto items-center hover:border-white border-white/50'>
                     <button onClick={handleNav} className='py-2.5 px-3'>
                         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
                     </button>
