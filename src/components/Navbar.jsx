@@ -22,66 +22,72 @@ const Navbar = () => {
     { id: 5, text: 'Contact' },
   ];
   return (
-    <div className='fixed top-0 left-0 w-full z-10'>
-        <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-17 bg-transparent">
-            {/* Logo */}
-            <a href="#" className='block text-3xl font-bold hover:text-white hover:transition-all hover:duration-500 bg-gradient-to-br from-cyan-400 to-lime-300 bg-clip-text text-transparent transition-all duration-500'>KANZ</a>
+    <div className='fixed top-0 left-0 w-full'>
+        <div className="flex mx-auto justify-between bg-black/75 backdrop-blur-md text-white py-4 px-20 items-center">
+            <a href="#" className='text-4xl font-semibold'>
+                KANZ
+            </a>
 
-            {/* Desktop Navigation */}
-            <ul className='hidden lg:flex gap-7 text-white/90'>
+            <ul className='hidden lg:inline-flex space-x-10 text-xl'>
                 {navItems.map(item => (
                 <li
                     key={item.id}
-                    className='cursor-pointer hover:text-transparent bg-gradient-to-r from-cyan-400/70 to-lime-300/70 bg-clip-text inline-block transition-all duration-500'
+                    className=''
                 >
                     {item.text}
                 </li>
                 ))}
             </ul>
 
-            {/* Mobile Navigation Icon */}
-            <a onClick={handleNav} className='inline-flex lg:hidden cursor-pointer border-2 p-2 border-transparent hover:rounded-full hover:border-2 hover:border-white hover:p-2 transition-all duration-500 hover:transition-all hover:duration-500'>
-                {nav ? <AiOutlineClose fill='white' size={20} /> : <AiOutlineMenu fill='white' size={20} />}
-            </a>
+            <ul className='inline-flex space-x-5 items-center'>
+                <li className='md:flex hidden'><a href="" className='border rounded-lg py-2 px-4'>Hire Me</a></li>
+                <li className='md:flex hidden '><a href="" className='border rounded-lg py-2 px-4'>Resume</a></li>
+                <li className='flex-none rounded-lg border  mx-auto items-center'>
+                    <button onClick={handleNav} className='py-2.5 px-3'>
+                        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+                    </button>
+                </li>                
+            </ul>
 
-
-            {/* Mobile Navigation Menu */}
             <ul
                 className={
                 nav
 
-                    ? 'fixed w-full h-full left-0 right-0 top-0 bottom-0 lg:hidden bg-black/95 text-white overflow-hidden ease-in-out duration-500'
-                    : 'fixed w-full h-full left-0 right-0 top-[-100%] bottom-[-100%] ease-in-out duration-500'
+                    ? 'fixed w-screen h-screen bg-black/90 left-0 right-0 top-0 backdrop-blur-lg text-white transition-all duration-500'
+                    : 'fixed w-full h-0 bg-transparent left-0 right-0 top-[-1000%] backdrop-blur-lg text-white transition-all duration-500'
                 }
             >
-                {/* Mobile Logo */}
-                    <div className="flex p-4 mx-2">
-                        <div className="flex-1 ml-2 ">
-                            <a href="#" className='flex-1 text-4xl font-bold hover:bg-gradient-to-br from-cyan-400 to-lime-300 hover:text-transparent bg-clip-text text-white transition-all duration-300'>KANZ</a>
 
-                        </div>
-                        <a href='#'>
-                            <div onClick={handleNav} className='flex-none px-2 py-2 rounded-full border-2 text-white hover:border-red-500/50 hover:text-red-500/50 transition-all duration-300'>
-                                {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
-                            </div>
-                        </a>
-                    </div>    
+            <div className="flex justify-between items-center py-2 px-10">
+            <a href="#" className='py-2 text-4xl'>
+                KANZ
+            </a>
 
-                {/* Mobile Navigation Items */}
-                <ul className='flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium'>
-                    
+            <ul className='inline-flex space-x-3 items-center py-2'>
+                <li className='flex'><a href="" className='border rounded-lg py-1.5 px-3'>Hire Me</a></li>
+                <li className='flex'><a href="" className='border rounded-lg py-1.5 px-3'>Resume</a></li>
+                <li className='flex-none rounded-lg border py-2 px-2'>
+                    <a onClick={handleNav} className='mx-auto items-center'>
+                        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+                    </a>
+                </li>                
+            </ul>
+            </div>
+            <div className="flex py-5 mt-10">
+                <ul className='flex-col mx-auto space-y-8 text-center text-xl'>
                     {navItems.map(item => (
                     <li
-                    key={item.id}
-                    className='inline-block p-4 cursor-pointer hover:text-transparent bg-gradient-to-r from-cyan-400/70 to-lime-300/70 bg-clip-text transition-all duration-500'
+                        key={item.id}
+                        className=''
                     >
                         {item.text}
                     </li>
-                    )) }
+                    ))}
                 </ul>
-            </ul>
-        </div>
+            </div>
+        </ul>
     </div>
+</div>
   );
 };
 
