@@ -11,7 +11,7 @@ const Experience = () => {
             <span className='font-light'>My </span>Experience</h1>
         <p className='text-white/50 max-w-80 text-center mb-8'>Passionate About Technologies. Dedicated To Your Needs.</p>
         <div className="flex flex-col md:flex-row items-center md:items-start md:gap-20">
-            <img src={assets.profile_img} alt="" className='w-full sm:w-1/2 max-w-lg overflow-hidden lg:w-90 items-center my-auto'/>
+            <img src={assets.profile_img} alt="" className='mask mask-hexagon-2 w-full sm:w-1/2 max-w-lg overflow-hidden lg:w-90 items-center my-auto'/>
             <div className="flex flex-col items-center md:items-start mt-10 text-white">
                 <div className="grid grid-cols-2 gap-6 md:gap-10 w-full 2xl:pr-28 text-center md:text-left">
                     <div className="">

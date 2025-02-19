@@ -22,7 +22,7 @@ const scrollToTop = () => {
 };
 
   return (
-    <div className='fixed w-full bg-black/50'>
+    <div className='fixed w-full bg-black/50 z-80'>
         <div className="flex w-full mx-auto justify-between backdrop-blur-md text-white py-3 lg:px-25 px-5">
             <div className="navbar-start">
                 <div className="px-2">
@@ -39,7 +39,7 @@ const scrollToTop = () => {
 
             <div className="navbar-center">
                 <div className={`${menuOpen ? "block" : "hidden"} lg:block`} >
-                    <ul className='flex gap-6 text-white text-center lg:py-2 lg:h-fit h-screen lg:flex-row lg:bg-transparent flex-col lg:relative absolute top-[100%] left-[50%] -translate-x-[50%] lg:text-lg pt-10 md:text-md text-sm w-full bg-black/80 sm:py-10 transition-all duration-500'>
+                    <ul className='flex gap-6 text-white text-center lg:py-2 lg:h-fit h-screen lg:flex-row lg:bg-transparent flex-col lg:relative absolute top-[100%] left-[50%] -translate-x-[50%] lg:text-lg pt-10 md:text-md text-sm w-full backdrop-blur-md bg-black/80 sm:py-10 transition-all duration-500 z-70'>
                         {navLinks.map((link, index) => {
                             return ( 
                             <li key={index} className='group'>
@@ -48,7 +48,7 @@ const scrollToTop = () => {
                                     smooth={true}
                                     spy={true}
                                     duration={500}
-                                    offset={-100}
+                                    offset={-70}
                                     className='cursor-pointer text-white bg-linear-to-r from-cyan-400/70 to-lime-300/70 bg-clip-text hover-active:text-transparent transition-all duration-500'
                                 >
                                     {link.link}
@@ -67,7 +67,7 @@ const scrollToTop = () => {
                     to="contact" 
                     spy={true} 
                     smooth={true} 
-                    offset={-100} 
+                    offset={-70} 
                     duration={500} 
                     >
                     <a className='cursor-pointer border border-gray-500 text-white bg-linear-to-r from-cyan-400/70 to-lime-300/70 bg-clip-text hover:text-transparent hover:border-emerald-900 transition-all duration-500 py-2 px-5 rounded-xl' >Hire Me</a>
@@ -76,7 +76,7 @@ const scrollToTop = () => {
                     to="resume" 
                     spy={true} 
                     smooth={true} 
-                    offset={-100} 
+                    offset={-70} 
                     duration={500} 
                     >
                     <a className='cursor-pointer border border-gray-500 text-white bg-linear-to-r from-cyan-400/70 to-lime-300/70 bg-clip-text hover:text-transparent hover:border-emerald-900 transition-all duration-500 py-2 px-5 rounded-xl' >Resume</a>
