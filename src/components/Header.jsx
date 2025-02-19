@@ -1,15 +1,14 @@
 import React from 'react'
-import Navbar from './Navbar'
 import {assets} from '../assets/assets'
 
 const Header = () => {
   return (
     <div className='min-h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden' 
     style={{backgroundImage: "linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('/header_img.jpg')"}} id='Header'>
-        <Navbar/>
         <div className="grid max-w-screen-xl p-10 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-3 items-center overflow-hidden">
             <div className="mx-auto text-center items-center lg:text-left text-white lg:col-span-2 space-x-6 px-10">
                 <img src={assets.profile_img} className='mx-auto flex lg:hidden w-50 py-10 mt-10' alt="" />
+                <h1 className='text-5xl text-white/70 m-0'>Hi, I'm</h1>
                 <h1 className='lg:text-left py-4 mr-0 text-5xl font-semibold tracking-tight leading-none md:text-5xl lg:text-6xl dark:text-white'>
                     Muhammad Gito Qabus <h1 className='bg-gradient-to-r from-cyan-400/70 to-lime-300/70 bg-clip-text text-transparent inline-block'>Kanz</h1>
                     <p className='text-xl font-extralight text-gray-400'>( He / Him)</p>
