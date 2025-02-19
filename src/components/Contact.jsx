@@ -5,8 +5,7 @@ import { SiGmail } from "react-icons/si";
 
 const Contact = () => {
   return (
-        // className='flex flex-col items-center justify-center container mx-auto p-14 md:px-20 lg:px-32 w-full overflow-hidden'
-        <div id='contact' className="hero bg-base-200 min-h-screen z-0">
+        <div id='contact' className="hero bg-emerald-700 min-h-screen z-0">
             <div className="hero-content flex-col lg:flex-row-reverse p-25 gap-10">
                 <div className="text-center ">
                     <h1 className='font-bold lg:text-4xl text-2xl mb-2'> 
@@ -18,7 +17,7 @@ const Contact = () => {
                         quasi. In deleniti eaque aut repudiandae et a id nisi.
                     </p>
                     {/* name of each tab group should be unique */}
-                    <div className="block">
+                    <div className="flex items-center">
                         <div className="tabs tabs-lift w-full">
                             <input type="radio" name="my_tabs_5" className="tab" aria-label="E-Mail" defaultChecked />
                             <div className="tab-content bg-base-100 border-base-300 p-10 w-300">
@@ -60,7 +59,7 @@ const Contact = () => {
                                 </div>
                             </div>
 
-                            <input type="radio" name="my_tabs_5" className="tab" aria-label="WhatsApp" defaultChecked />
+                            <input type="radio" name="my_tabs_5" className="tab" aria-label="WhatsApp" />
                             <div className="tab-content bg-base-100 border-base-300 p-10 w-300">
                                 <div className="flex w-full flex-col lg:flex-row">
                                     <div className="card rounded-box grid place-items-center">
