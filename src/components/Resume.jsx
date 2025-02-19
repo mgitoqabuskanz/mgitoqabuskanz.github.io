@@ -6,7 +6,7 @@ const Resume = () => {
   return (
     <div 
         id='resume'
-        className='flex flex-col items-center justify-center container mx-auto p-14 md:px-20 lg:px-32 w-full overflow-hidden'
+        className='flex flex-col bg-secondary items-center justify-center mx-auto py-14 md:px-20 lg:px-32 w-full overflow-hidden'
     >
         <h1 className='text-2xl sm:text-4xl font-bold mb-2'> 
             <span className='font-light'>My </span>Resume</h1>
