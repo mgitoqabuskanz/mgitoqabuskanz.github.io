@@ -1,28 +1,30 @@
-import about_profile from '../assets/about_profile.svg'
-import arrow_icon from '../assets/arrow_icon.svg'
-import call_icon from '../assets/call_icon.svg'
-import footer_logo from '../assets/footer_logo.svg'
-import location_icon from '../assets/location_icon.svg'
-import logo from '../assets/logo.svg'
-import mail_icon from '../assets/mail_icon.svg'
-import menu_close from '../assets/menu_close.svg'
-import menu_open from '../assets/menu_open.svg'
-import nav_underline from '../assets/nav_underline.svg'
-import profile_img from '../assets/profile_img.jpg'
-import project1_img from '../assets/project_1.svg'
-import project2_img from '../assets/project_2.svg'
-import project3_img from '../assets/project_3.svg'
-import project4_img from '../assets/project_4.svg'
-import project5_img from '../assets/project_5.svg'
-import project6_img from '../assets/project_6.svg'
-import theme_pattern from '../assets/theme_pattern.svg'
-import user_icon from '../assets/user_icon.svg'
+import about_profile from './about_profile.svg'
+import arrow_icon from './arrow_icon.svg'
+import call_icon from './call_icon.svg'
+import footer_logo from './footer_logo.svg'
+import gmail_icon from './gmail_icon.png'
+import location_icon from './location_icon.svg'
+import logo from './logo.svg'
+import mail_icon from './mail_icon.svg'
+import menu_close from './menu_close.svg'
+import menu_open from './menu_open.svg'
+import nav_underline from './nav_underline.svg'
+import profile_img from './profile_img.jpg'
+import project1_img from './project_1.svg'
+import project2_img from './project_2.svg'
+import project3_img from './project_3.svg'
+import project4_img from './project_4.svg'
+import project5_img from './project_5.svg'
+import project6_img from './project_6.svg'
+import theme_pattern from './theme_pattern.svg'
+import user_icon from './user_icon.svg'
 
 export const assets = {
     about_profile,
     arrow_icon,
     call_icon,
     footer_logo,
+    gmail_icon,
     location_icon,
     logo,
     mail_icon,
@@ -31,7 +33,13 @@ export const assets = {
     nav_underline,
     profile_img,
     theme_pattern,
-    user_icon
+    user_icon,
+    project1_img,
+    project2_img,
+    project3_img,
+    project4_img,
+    project5_img,
+    project6_img
 }
 
 export const mywork_data = [
