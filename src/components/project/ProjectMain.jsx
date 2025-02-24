@@ -1,45 +1,8 @@
 import React from 'react'
-import { assets, mywork_data } from '../../assets/assets'
+import { assets } from '../../assets/assets'
 import ProjectSlider from './ProjectSlider'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from 'react-slick'
 
 const ProjectMain = () => {
-  var settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    initialSlide: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  };
   return (
     <div className="container mx-auto text-center w-full p-15" id="project">
       <div className="block lg:w-3/4 w-full mx-auto">
@@ -53,7 +16,7 @@ const ProjectMain = () => {
       <div className="block w-full lg:px-15 px-2 mb-10">
         <ProjectSlider/>
       </div>
-      <button className="btn btn-wide btn-soft hover:btn-accent border-accent">See More</button>
+      <button className="btn btn-wide btn-soft btn-accent border-accent">See More</button>
     </div>
   )
 }

@@ -65,7 +65,7 @@ const ProjectSlider = () => {
                     }
                   </p>
                   <a
-                  href={work.w_link} class="px-4 py-2 text-sm btn btn-soft btn-accent"
+                  href={work.w_link} class="px-4 py-2 text-sm btn btn-soft btn-accent border-accent"
                   >
                     Learn More
                   </a>
