@@ -1,5 +1,10 @@
 {
   "name": "vite-react",
+  "homepage": "https://mgitoqabuskanz.github.io",
+  "repository": "mgitoqabuskanz.github.io",
+  "license": "MIT",
+  "author": "Muhammad Qabus Kanz",
+  "description": "A Vite + React setup with Tailwind CSS, PostCSS, ESLint, and Prettier",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +12,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
@@ -16,6 +23,7 @@
     "@tailwindcss/postcss": "^4.0.6",
     "@tailwindcss/vite": "^4.0.6",
     "daisyui": "^5.0.0-beta.8",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.2",
     "react": "^19.0.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
