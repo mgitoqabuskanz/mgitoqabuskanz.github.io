@@ -1,10 +1,10 @@
 {
-  "name": "vite-react",
-  "homepage": "https://mgitoqabuskanz.github.io/mgitoqabuskanz.github.io",
+  "name": "Portfolio",
+  "homepage": "https://mgitoqabuskanz.github.io",
   "license": "MIT",
   "author": "Muhammad Qabus Kanz",
-  "description": "A Vite + React setup with Tailwind CSS, PostCSS, ESLint, and Prettier",
-  "private": true,
+  "description": "Portfolio Website",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
