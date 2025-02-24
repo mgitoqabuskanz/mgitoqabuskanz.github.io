@@ -18,6 +18,7 @@ import project5_img from './project_5.svg'
 import project6_img from './project_6.svg'
 import theme_pattern from './theme_pattern.svg'
 import user_icon from './user_icon.svg'
+import sample_pdf from './sample.pdf'
 
 export const assets = {
     about_profile,
@@ -39,7 +40,8 @@ export const assets = {
     project3_img,
     project4_img,
     project5_img,
-    project6_img
+    project6_img,
+    sample_pdf
 };
 
 export const mywork_data = [
