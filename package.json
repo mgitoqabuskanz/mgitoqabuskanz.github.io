@@ -1,10 +1,7 @@
 {
   "name": "portfolio",
-  "homepage": "https://mgitoqabuskanz.github.io/mgitoqabuskanz.github.io/",
-  "license": "MIT",
-  "author": "Muhammad Qabus Kanz",
-  "description": "Portfolio Website",
-  "private": false,
+  "homepage": "https://mgitoqabuskanz.github.io/mgitoqabuskanz.github.io",
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
