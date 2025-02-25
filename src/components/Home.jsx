@@ -13,12 +13,12 @@ const Home = () => {
     <div className='w-full overflow-hidden' id='home'>
         <NavbarMain/>
         <HeroMain/>
-        <AboutMain/>
+        {/* <AboutMain/>
         <ExperienceMain/>
         <ProjectMain/>
         <ResumeMain/>
         <ContactMain/>
-        <FooterMain/>
+        <FooterMain/> */}
     </div>
   )
 }
