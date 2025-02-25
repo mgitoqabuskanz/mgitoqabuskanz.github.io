@@ -11,4 +11,15 @@ export default defineConfig({
         react(),
     ],
     base: {mgitoqabuskanz.github.io},
+    server: {
+        port: 3000,
+    },
+    build: {
+        outDir: 'build',
+    },
+    resolve: {
+        alias: {
+            'react-pdf': 'react-pdf/dist/esm/entry.webpack',
+        },
+    },
 })
