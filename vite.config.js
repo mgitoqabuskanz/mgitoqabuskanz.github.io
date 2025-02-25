@@ -10,5 +10,4 @@ export default defineConfig({
         tailwindcss(),
         react(),
     ],
-    base: "/{mgitoqabuskanz.github.io}/",
 })
